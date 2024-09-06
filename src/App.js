@@ -74,12 +74,6 @@ function App() {
       songAvatar: './Assets/Images/image3.jpg'
     },
     {
-      songName: 'Baby doll [ slowed + reverb ]',
-      songArtist: 'Kanika Kapoor',
-      songSrc: './Assets/songs/Baby doll [ slowed + reverb ] __ meet bros ,Kanika Kapoor __ jr santu.mp3',
-      songAvatar: './Assets/Images/image5.jpg'
-    },
-    {
       songName: 'Soch (Slowed+Reverbed)',
       songArtist: 'Hardy Sandhu',
       songSrc: './Assets/songs/SOCH(Slowed+Reverbed) __ Hardy Sandhu.webm',
