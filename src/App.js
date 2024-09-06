@@ -144,13 +144,16 @@ function App() {
 
   const vidArray = ['./Assets/Videos/video1.mp4','./Assets/Videos/video2.mp4','./Assets/Videos/video3.mp4','./Assets/Videos/video4.mp4','./Assets/Videos/video5.mp4','./Assets/Videos/video6.mp4'];
 
-  const handleChangeBackground = ()=>{
-    if (videoIndex >= vidArray.length - 1) {
-      setVideoIndex(0);
-    }else{
-      setVideoIndex(videoIndex + 1)
-    }
+
+  const handleChangeBackground = () => {
+  console.log("Current Video Index:", videoIndex); // Debug log
+  if (videoIndex >= vidArray.length - 1) {
+    setVideoIndex(0);
+  } else {
+    setVideoIndex(videoIndex + 1);
   }
+};
+
 
 
   return (
