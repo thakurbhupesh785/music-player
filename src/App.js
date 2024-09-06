@@ -74,6 +74,12 @@ function App() {
       songAvatar: './Assets/Images/image3.jpg'
     },
     {
+      songName: 'Baby doll [ slowed + reverb ]',
+      songArtist: 'Kanika Kapoor',
+      songSrc: './Assets/songs/Baby doll [ slowed + reverb ] __ meet bros ,Kanika Kapoor __ jr santu.mp3',
+      songAvatar: './Assets/Images/image5.jpg'
+    },
+    {
       songName: 'Soch (Slowed+Reverbed)',
       songArtist: 'Hardy Sandhu',
       songSrc: './Assets/songs/SOCH(Slowed+Reverbed) __ Hardy Sandhu.webm',
@@ -144,7 +150,13 @@ function App() {
 
   const vidArray = ['./Assets/Videos/video1.mp4','./Assets/Videos/video2.mp4','./Assets/Videos/video3.mp4','./Assets/Videos/video4.mp4','./Assets/Videos/video5.mp4','./Assets/Videos/video6.mp4'];
 
-
+  const handleChangeBackground = ()=>{
+    if (videoIndex >= vidArray.length - 1) {
+      setVideoIndex(0);
+    }else{
+      setVideoIndex(videoIndex + 1)
+    }
+  }
 
 
   return (
@@ -169,7 +181,13 @@ function App() {
           <i className='fa-solid fa-forward musicControler' onClick={handleNextSong}></i>
         </div>
       </div>
-
+      <div className="changeBackBtn" onClick={handleChangeBackground}>
+        Change Background
+      </div>
+      <a href="https://www.youtube.com/@teenage-programmer" title='Subscribe' className='youtube-Subs'>
+        <img src="./Assets/Images/Youtube_logo.png" alt="Youtube Logo"/>
+        <p>Teenage Programmer</p>
+      </a>
     </div>
     </>
   );
